@@ -441,7 +441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1572545196}
-  - component: {fileID: 1572545195}
+  - component: {fileID: 1572545197}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -449,21 +449,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1572545195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572545194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27dd20533bf51d942831ea210e108ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TerrainScatter
-  terrain: {fileID: 1952198452}
-  prefab: {fileID: 845955343782261607, guid: a5b69091fe427fa4c989864a8fdffe83, type: 3}
-  count: 100
 --- !u!4 &1572545196
 Transform:
   m_ObjectHideFlags: 0
@@ -479,6 +464,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1572545197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572545194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a3cc8f9a0f7b41a2c86b497511bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TerrainGenerator
+  terrain: {fileID: 1952198452}
+  noiseScale: 50
+  heightMultiplier: 0.2
+  noiseOffset: {x: 0, y: 0}
 --- !u!1 &1952198450
 GameObject:
   m_ObjectHideFlags: 0
